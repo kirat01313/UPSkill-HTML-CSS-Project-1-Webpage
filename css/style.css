@@ -131,6 +131,54 @@ address { font-style: normal; }
 }
 
 /* ================================================
+   5. CABEÇALHO  (header)
+   ================================================ */
+header {
+  background: var(--marca-escura);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+header .contentor {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: .75rem;
+}
+
+header > .contentor > .primeiro-a {
+  font-family: var(--fonte-titulo);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+}
+
+header nav a {
+  color: rgba(255, 255, 255, .85);
+  font-size: .875rem;
+  font-weight: 500;
+  transition: color .2s;
+}
+header nav a:hover { color: #fff; }
+
+.btn-tema {
+  background: transparent;
+  border: 1.5px solid rgba(255, 255, 255, .4);
+  color: #ffffff;
+  padding: .4rem .8rem;
+  border-radius: var(--raio);
+  font-size: .8rem;
+}
+.btn-tema:hover { border-color: #fff; }
+
+/* ================================================
 
    ================================================ */
 
