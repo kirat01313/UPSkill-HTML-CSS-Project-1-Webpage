@@ -234,7 +234,7 @@ header nav a:hover { color: #fff; }
   font-weight: 600;
   letter-spacing: .1em;
   text-transform: uppercase;
-  color: var(--dourado);
+  color: var(--maisdourado);
   background: var(--vidro);
   padding: .4rem 1rem;
   border-radius: 999px;
@@ -269,6 +269,26 @@ header nav a:hover { color: #fff; }
   letter-spacing: .15em;
   text-transform: uppercase;
   color: var(--branco-80);
+}
+
+
+/* ================================================
+   7. SECÇÕES  (padding + fundos alternados)
+   ================================================ */
+section { 
+    padding-top: 4rem;
+    padding-bottom: 4rem; 
+}
+
+#sabores      { background: var(--fundo); }
+#historia     { background: var(--superficie); }
+#como-e-feito { background: var(--fundo); }
+#formatos     { background: var(--superficie); }
+#testemunhos  { background: var(--fundo); }
+
+#newsletter {
+  background: var(--marca-escura);
+  color: #fff;
 }
 
 /* ================================================
