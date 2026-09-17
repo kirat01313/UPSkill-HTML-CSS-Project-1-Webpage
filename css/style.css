@@ -43,8 +43,8 @@ address { font-style: normal; }
 
 .contentor {
   max-width: var(--largura-max);
-  margin-inline: auto;        /* centra */
-  padding-inline: 1.25rem;    /* respiro nas margens no telemóvel */
+  margin-inline: auto;       
+  padding-inline: 1.25rem;    
 }
 
 .sabores {
@@ -52,3 +52,19 @@ address { font-style: normal; }
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 1.5rem;
 }
+
+.sabor {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--cartao);
+  border: 1px solid var(--borda);
+  border-radius: var(--raio-cartao);
+  overflow: hidden;           
+}
+
+.sabor img {
+  aspect-ratio: 1 / 1;        
+  object-fit: cover;           
+}
+
+.sabor .preco { margin-top: auto; }  
