@@ -1,0 +1,42 @@
+/* 1. reset */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+img { max-width: 100%; height: auto; display: block; }
+
+/* 2. Cores do DESIGN.md */
+:root {
+  --fundo: #fdf9ef;
+  --superficie: #f7f3e9;
+  --cartao: #fdfbf7;
+  --texto: #1c1c16;
+  --texto-suave: #414942;
+  --marca: #2a5a3b;
+  --marca-escura: #1e432b;
+  --madeira: #5c3d2e;
+  --dourado: #c5a059;
+  --borda: rgba(92, 61, 46, .12);
+
+  --fonte-titulo: "Playfair Display", Georgia, serif;
+  --fonte-texto: "Plus Jakarta Sans", system-ui, sans-serif;
+
+  --raio: 8px;
+  --raio-cartao: 16px;
+  --espaco: 1.5rem;
+  --largura-max: 1140px;
+}
+
+/* 3. base */
+body {
+  background-color: var(--fundo);
+  color: var(--texto);
+  font-family: var(--fonte-texto);
+  font-size: 1rem;      /* 16px — respeita a definição do utilizador */
+  line-height: 1.6;
+}
+
+h1, h2, h3 { font-family: var(--fonte-titulo); line-height: 1.2; }
+h1 { font-size: 3rem; }      /* 48px */
+h2 { font-size: 2.25rem; }   /* 36px */
+h3 { font-size: 1.25rem; }   /* 20px */
+
+a { color: var(--marca); }
+address { font-style: normal; }
