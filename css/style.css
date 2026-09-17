@@ -43,6 +43,15 @@ button   { cursor: pointer; font: inherit; }
   /*Cores testes*/
 
   --teste1: #00fff2;
+  --overlay:      rgba(20, 18, 14, .55);
+  --vidro:        rgba(0, 0, 0, .35);
+  --branco:       #fff;
+  --branco-85:    rgba(255, 255, 255, .85);
+  --branco-80:    rgba(255, 255, 255, .8);
+  --branco-50:    rgba(255, 255, 255, .5);
+  --branco-15:    rgba(255, 255, 255, .15);
+  --branco-10:    rgba(255, 255, 255, .1);
+  --maisdourado: #ffe815;
 }
 
 /* 3. base */
@@ -190,7 +199,7 @@ header nav a:hover { color: #fff; }
 
 #hero {
   background:
-    linear-gradient(rgba(20, 18, 14, .27), rgba(20, 18, 14, .84)),
+    linear-gradient(rgba(20, 18, 14, .20), rgba(20, 18, 14, .80)),
     url("../assets/img/hero-casa-do-funcho.jpg")
     center / cover no-repeat;
   min-height: 70vh;
@@ -200,33 +209,66 @@ header nav a:hover { color: #fff; }
   justify-content: center;
   text-align: center;
   padding: 2rem 1.25rem;
+  gap: 1.5rem;
 }
 
 #hero h1 {
-  color: #fff;
+  color: var(--branco);
+  max-width: 900px;
+}
+
+#hero h1 em {
+  font-style: italic;
+  color: var(--maisdourado);
+}
+
+#hero > p:not(.hero-badge) {
+  color: var(--branco-85);
+  font-size: 1rem;
+  margin-top: .75rem;
   max-width: 700px;
 }
 
-#hero p {
-  color: rgba(255, 255, 255, .85);
-  font-size: 1.125rem;
-  margin-top: .75rem;
-  max-width: 520px;
+.hero-badge {
+  font-size: .7rem;
+  font-weight: 600;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--dourado);
+  background: var(--vidro);
+  padding: .4rem 1rem;
+  border-radius: 999px;
+  margin-bottom: 1.25rem;
 }
 
-#hero a {
+.hero-botoes {
+  display: flex;
+  gap: 1rem;
   margin-top: 1.5rem;
-  display: inline-block;
-  padding: .75rem 1.5rem;
-  background: var(--marca);
-  color: #fff;
-  border-radius: var(--raio);
-  font-weight: 600;
-  transition: background .2s, color .2s;
 }
-#hero a:hover { 
-    background: var(--marca-escura); 
-    color: var(--teste1); 
+
+.hero-btn-sec {
+  border-color: var(--branco-50);
+  color: var(--branco);
+}
+.hero-btn-sec:hover {
+  background: var(--branco-10);
+}
+
+.hero-destaques {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--branco-15);
+}
+
+.hero-destaques p {
+  font-size: .60rem;
+  font-weight: 600;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  color: var(--branco-80);
 }
 
 /* ================================================
