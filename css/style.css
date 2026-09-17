@@ -40,3 +40,15 @@ h3 { font-size: 1.25rem; }   /* 20px */
 
 a { color: var(--marca); }
 address { font-style: normal; }
+
+.contentor {
+  max-width: var(--largura-max);
+  margin-inline: auto;        /* centra */
+  padding-inline: 1.25rem;    /* respiro nas margens no telemóvel */
+}
+
+.sabores {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
