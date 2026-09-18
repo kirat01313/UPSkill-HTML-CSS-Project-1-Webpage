@@ -400,6 +400,93 @@ section {
     margin-top: 1rem;
 }
 
+/* ================================================
+   11. FORMATOS  (cards de preço)
+   ================================================ */
+.formatos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.formato {
+  position: relative;
+  background: var(--cartao);
+  border: 1px solid var(--borda);
+  border-radius: var(--raio-cartao);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.formato > p:not(.etiqueta) {
+    margin-top: auto;
+}
+
+
+
+.formato .btn { margin-top: auto; }
+
+.formato-destaque {
+  background: var(--marca);
+  color: #fff;
+  border-color: var(--marca);
+  transition: box-shadow .2s;
+}
+.formato-destaque .etiqueta { color: var(--maisdourado)}
+.formato-destaque h3 { color: var(--maisdourado)}
+.formato-destaque .preco strong { color: #fff; }
+
+.formato-destaque .preco { 
+    color: rgba(255, 255, 255, .85); 
+    margin-top: auto;
+}
+
+.formato-destaque .btn {
+  background: #fff;
+  color: var(--marca);
+  border-color: #fff;
+}
+
+.formato-destaque .btn:hover {
+    background: rgb(53, 45, 0);
+    color: var(--maisdourado);
+    box-shadow: 0 4px 16px var(--sombra);
+}
+
+.selo {
+  position: absolute;
+  top: -12px;
+  right: 1rem;
+  background: var(--dourado);
+  color: #fff;
+  font-size: .7rem;
+  font-weight: 600;
+  padding: .25rem .75rem;
+  border-radius: 999px;
+}
+
+.beneficios {
+  margin: 1rem 0;
+  font-size: .85rem;
+}
+.beneficios li {
+  padding-left: 1.25rem;
+  position: relative;
+  margin-bottom: .35rem;
+}
+.beneficios li::before {
+  content: "\2713";
+  position: absolute;
+  left: 0;
+  color: var(--marca-texto);
+  font-weight: 700;
+}
+.formato-destaque .beneficios li::before {
+  color: rgba(255, 255, 255, .85);
+}
+
 
 /* ================================================
 
