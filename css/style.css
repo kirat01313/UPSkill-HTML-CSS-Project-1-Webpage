@@ -360,6 +360,45 @@ section {
   margin-top: .5rem;
 }
 
+.historia p {
+    margin-top: 1rem;
+}
+
+
+
+/* ================================================
+   10. COMO É FEITO  (CSS counter)
+   ================================================ */
+
+.passos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  counter-reset: passo;
+}
+
+.passos li {
+  counter-increment: passo;
+  border: 1px solid var(--borda);
+  border-radius: var(--raio-cartao);
+  padding: 1.5rem;
+}
+
+.passos li::before {
+  content: "0" counter(passo);
+  display: block;
+  font-family: var(--fonte-titulo);
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--marca);
+  opacity: .25;
+  margin-bottom: .25rem;
+}
+
+#como-e-feito > .contentor p {
+    margin-top: 1rem;
+}
 
 
 /* ================================================
