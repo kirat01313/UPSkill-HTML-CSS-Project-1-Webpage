@@ -287,8 +287,7 @@ section {
 #testemunhos  { background: var(--fundo); }
 
 #newsletter {
-  background: var(--marca-escura);
-  color: #fff;
+  background: var(--fundo);
 }
 
 /* ================================================
@@ -525,6 +524,49 @@ section {
   font-size: .8rem;
   color: var(--texto-suave);
 }
+
+/* ================================================
+   13. NEWSLETTER  (flexbox)
+   ================================================ */
+.newsletter {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  background: var(--marca-escura);
+  color: var(--branco);
+  padding: 3rem;
+  border-radius: var(--raio-cartao);
+}
+
+.newsletter h2 { color: var(--branco); }
+.newsletter .etiqueta { color: var(--dourado); }
+
+.form-newsletter {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  min-width: 280px;
+}
+
+.form-newsletter label {
+  font-size: .8rem;
+  color: rgba(255, 255, 255, .7);
+}
+
+.form-newsletter input {
+  padding: .6rem .75rem;
+  border: 1.5px solid rgba(255, 255, 255, .3);
+  border-radius: var(--raio);
+  background: rgba(255, 255, 255, .1);
+  color: #fff;
+  font-size: .9rem;
+}
+.form-newsletter input:focus {
+  outline: none;
+  border-color: var(--dourado);
+}
+
+
 
 /* ================================================
 
