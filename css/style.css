@@ -202,7 +202,7 @@ header nav a:hover { color: #fff; }
     linear-gradient(rgba(20, 18, 14, .20), rgba(20, 18, 14, .80)),
     url("../assets/img/hero-casa-do-funcho.jpg")
     center / cover no-repeat;
-  min-height: 70vh;
+  min-height: 82vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -290,6 +290,46 @@ section {
   background: var(--marca-escura);
   color: #fff;
 }
+
+/* ================================================
+   8. SABORES  (grid 3 colunas)
+   ================================================ */
+.sabores {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.sabor {
+  background: var(--cartao);
+  border: 1px solid var(--borda);
+  border-radius: var(--raio-cartao);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow .2s;
+}
+.sabor:hover {
+  box-shadow: 0 4px 16px var(--sombra);
+}
+
+.sabor img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.sabor h3,
+.sabor p { padding-inline: 1rem; }
+
+.sabor h3 { margin-top: .75rem; }
+
+.sabor .preco {
+  margin-top: auto;
+  padding: .75rem 1rem 1rem;
+}
+
 
 /* ================================================
 
