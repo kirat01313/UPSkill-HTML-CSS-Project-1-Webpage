@@ -325,10 +325,41 @@ section {
 
 .sabor h3 { margin-top: .75rem; }
 
-.sabor .preco {
-  margin-top: auto;
-  padding: .75rem 1rem 1rem;
+/* ================================================
+   9. HISTÓRIA  (grid 5fr 7fr)
+   ================================================ */
+.historia {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  gap: 2.5rem;
+  align-items: start;
 }
+
+.historia figure img {
+  border-radius: var(--raio-cartao);
+  width: 100%;
+}
+
+.historia figcaption {
+  font-size: .8rem;
+  color: var(--texto-suave);
+  margin-top: .5rem;
+}
+
+.historia blockquote {
+  border-left: 3px solid var(--marca);
+  padding-left: 1.25rem;
+  margin-top: 1.5rem;
+  font-style: italic;
+}
+
+.historia blockquote footer {
+  font-style: normal;
+  font-size: .85rem;
+  color: var(--texto-suave);
+  margin-top: .5rem;
+}
+
 
 
 /* ================================================
