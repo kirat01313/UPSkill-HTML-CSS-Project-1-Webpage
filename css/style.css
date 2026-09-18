@@ -622,6 +622,35 @@ section {
   --marca-texto: #9fd3ab;
 }
 
+/* ================================================
+   17. RESPONSIVE
+   ================================================ */
+@media (max-width: 1024px) {
+  .sabores        { grid-template-columns: repeat(2, 1fr); }
+  .passos         { grid-template-columns: repeat(2, 1fr); }
+  .formatos       { grid-template-columns: repeat(2, 1fr); }
+  .testemunhos    { grid-template-columns: repeat(2, 1fr); }
+  .rodape-colunas { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 768px) {
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.5rem; }
+
+  .sabores,
+  .historia,
+  .passos,
+  .formatos,
+  .testemunhos,
+  .rodape-colunas { grid-template-columns: 1fr; }
+
+  header .contentor { flex-wrap: wrap; gap: .75rem; }
+
+  .newsletter { flex-direction: column; text-align: center; }
+  .form-newsletter { width: 100%; }
+
+  #hero { min-height: 50vh; }
+}
 
 /* ================================================
 
