@@ -37,7 +37,7 @@ button   { cursor: pointer; font: inherit; }
   --raio: 8px;
   --raio-cartao: 16px;
   --espaco: 1.5rem;
-  --largura-max: 1140px;
+  --largura-max: 1350px;
 
 
   /*Cores testes*/
@@ -86,7 +86,7 @@ address { font-style: normal; }
 .contentor {
   max-width: var(--largura-max);
   margin-inline: auto;
-  padding-inline: 1.25rem;
+  padding-inline: 1rem;
 }
 
 .salta {
@@ -276,8 +276,8 @@ header nav a:hover { color: #fff; }
    7. SECÇÕES  (padding + fundos alternados)
    ================================================ */
 section { 
-    padding-top: 4rem;
-    padding-bottom: 4rem; 
+    padding-top: 2rem;
+    padding-bottom: 3rem; 
 }
 
 #sabores      { background: var(--fundo); }
@@ -285,10 +285,7 @@ section {
 #como-e-feito { background: var(--fundo); }
 #formatos     { background: var(--superficie); }
 #testemunhos  { background: var(--fundo); }
-
-#newsletter {
-  background: var(--fundo);
-}
+#newsletter   { background: var(--fundo);}
 
 /* ================================================
    8. SABORES  (grid 3 colunas)
@@ -363,8 +360,8 @@ section {
   margin-top: .5rem;
 }
 
-.historia p {
-    margin-top: 1rem;
+#historia p:not(.etiqueta) {
+  margin-top: 1rem;
 }
 
 
