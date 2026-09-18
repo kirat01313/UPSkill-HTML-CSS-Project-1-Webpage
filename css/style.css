@@ -335,6 +335,10 @@ section {
   align-items: start;
 }
 
+.historia > .etiqueta {
+  grid-column: span 2;
+}
+
 .historia figure img {
   border-radius: var(--raio-cartao);
   width: 100%;
@@ -487,6 +491,40 @@ section {
   color: rgba(255, 255, 255, .85);
 }
 
+
+/* ================================================
+   12. TESTEMUNHOS  (grid 3 colunas)
+   ================================================ */
+
+.testemunhos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.testemunho {
+  background: var(--cartao);
+  border: 1px solid var(--borda);
+  border-radius: var(--raio-cartao);
+  padding: 1.5rem;
+}
+
+.estrelas {
+  color: var(--maisdourado);
+  font-size: 1rem;
+  margin-bottom: .5rem;
+}
+
+.testemunho blockquote {
+  font-size: .95rem;
+  margin-bottom: .75rem;
+}
+
+.testemunho figcaption {
+  font-size: .8rem;
+  color: var(--texto-suave);
+}
 
 /* ================================================
 
