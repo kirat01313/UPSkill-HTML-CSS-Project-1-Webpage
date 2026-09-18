@@ -592,6 +592,35 @@ section {
   color: rgba(255, 255, 255, .5);
 }
 
+/* ================================================
+   15. ACESSIBILIDADE
+   ================================================ */
+:focus-visible {
+  outline: 2px solid var(--marca);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}
+
+/* ================================================
+   16. TEMA ESCURO
+   ================================================ */
+
+[data-tema="escuro"] {
+  --fundo:       #1a1a14;
+  --superficie:  #22221c;
+  --cartao:      #2a2a22;
+  --texto:       #e6e2d8;
+  --texto-suave: #a8a89c;
+  --borda:  rgba(255, 255, 255, .1);
+  --sombra: rgba(0, 0, 0, .3);
+  --marca-texto: #9fd3ab;
+}
 
 
 /* ================================================
