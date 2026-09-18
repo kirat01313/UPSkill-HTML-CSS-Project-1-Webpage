@@ -563,6 +563,35 @@ section {
   border-color: var(--dourado);
 }
 
+/* ================================================
+   14. RODAPÉ
+   ================================================ */
+.rodape {
+  background: #1c1c16;
+  color: #e6e2d8;
+  padding-block: 3rem 1.5rem;
+}
+
+.rodape h2,
+.rodape h3 { color: #fff; }
+
+.rodape a { color: rgba(255, 255, 255, .7); }
+.rodape a:hover { color: #fff; }
+
+.rodape-colunas {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 2rem;
+}
+
+.rodape-fim {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, .1);
+  font-size: .8rem;
+  color: rgba(255, 255, 255, .5);
+}
+
 
 
 /* ================================================
