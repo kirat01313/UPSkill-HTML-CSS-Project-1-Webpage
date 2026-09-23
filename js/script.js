@@ -7,10 +7,7 @@ const botao = document.querySelector(".btn-tema");
 const guardado = localStorage.getItem("tema");
 
 function atualizarBotao() {
-  const sistemaEscuro = matchMedia("(prefers-color-scheme: dark)").matches;
-  const estaEscuro =
-    raiz.getAttribute("data-tema") === "escuro" ||
-    (!raiz.hasAttribute("data-tema") && sistemaEscuro);
+  const estaEscuro = raiz.getAttribute("data-tema") === "escuro";
   botao.textContent = estaEscuro ? "Tema claro" : "Tema escuro";
   botao.setAttribute("aria-pressed", String(estaEscuro));
 }
@@ -21,10 +18,7 @@ if (guardado) {
 atualizarBotao();
 
 botao.addEventListener("click", function () {
-  const sistemaEscuro = matchMedia("(prefers-color-scheme: dark)").matches;
-  const estaEscuro =
-    raiz.getAttribute("data-tema") === "escuro" ||
-    (!raiz.hasAttribute("data-tema") && sistemaEscuro);
+  const estaEscuro = raiz.getAttribute("data-tema") === "escuro";
   const novo = estaEscuro ? "claro" : "escuro";
   raiz.setAttribute("data-tema", novo);
   localStorage.setItem("tema", novo);
